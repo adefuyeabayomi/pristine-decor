@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Page Title</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+        <meta name="description" content="Pristine Interior Deoration Company">
+        <meta name="og:image" content="https://linktoimage.com/image.png">
+        <!--link to uikit.css-->
+        <link rel="stylesheet" href="./node_modules/uikit/dist/css/uikit.min.css"/>
+        <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+        <!--link to site's css-->
+        <link href="css/topbar.css" rel="stylesheet">
+            <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+    <body>
+    <header class="yt-topbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                    <div class="yt-logo-container">
+                        <a href="#"> <!--link to homepage-->
+                            <img class="yt-logo-img" alt="logo" src="./assets/images/logo.png" >
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-9 col-lg-10">
+                    <div id="yt-ham-hotspot" class="yt-hamburger-container">
+                        <div class="yt-tight">
+                            <div class="yt-menu-text">MENU</div> <!--leave menu text if you like-->
+                            <div class="yt-ham">
+                                <div class="yt-ham-line"></div>
+                                <div class="yt-ham-line top"></div>
+                                <div class="yt-ham-line bottom"></div>
+                                <div class="yt-ham-line"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="yt-nav-container uk-animation-slide-right"><!--you can use other animation class from any other animation library you like here-->
+                        <nav> <!--include page navigation here and customize the yt-nav-container as you see fit-->
+                            <ul class="yt-page-nav">
+                                <li class="yt-nav-active"><a href="#">Home</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="./gallary.html">Gallary</a></li>
+                                <li><a href="./about.html">About Us</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>  
+    <script type="text/javascript">
+        let ytMenuBtn = document.querySelector("#yt-ham-hotspot");
+        ytMenuBtn.addEventListener("click",(e)=>{
+            let ham = document.querySelector(".yt-ham");
+            let nav = document.querySelector(".yt-nav-container");
+            let isActive = false;
+            for(let each of ham.classList){
+                isActive = each == "yt-ham-active" ? true : false;
+                if(isActive){
+                    break;
+                }
+            }
+            console.log("isActive",!isActive)
+            if(isActive){
+                ham.classList.remove("yt-ham-active");
+                nav.classList.remove("yt-mobile");
+            }
+            else{
+                ham.classList.add("yt-ham-active");
+                nav.classList.add("yt-mobile")
+            }
+        })
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,124 @@
+.yt-landing-container{
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url("../assets/images/pexels-dima-valkov-3314866\ 2.png");
+    height: 450px;
+    background-repeat: repeat-x;
+}
+
+.yt-level-1-container, .yt-level-2-container{
+    width: 100%;
+    position : absolute;
+    height: inherit;
+    right: 0%;
+}
+.yt-level-1-container{
+    z-index: 1;
+    width: 60%;
+}
+.yt-level-2-container{
+    color: #cd6a00;
+    z-index: 2;
+    border: 5px solid;
+    padding: 16px;
+}
+.yt-landing-container{
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url("../assets/images/pexels-dima-valkov-3314866\ 2.png");
+    height: 450px;
+    background-repeat: repeat-x;
+}
+
+.yt-level-1-container, .yt-level-2-container{
+    width: 100%;
+    position : absolute;
+    height: inherit;
+    left: 0%;
+}
+.yt-level-1-container{
+    z-index: 1;
+    width: 60%;
+}
+.yt-level-2-container{
+    color: #cd6a00;
+    z-index: 2;
+    border: 5px solid;
+    padding: 16px;
+}
+.yt-level-one-img{
+    width: 100%;
+    height: inherit;
+    opacity: 0.5;
+}
+.yt-headline{
+    text-align: left;
+    font-size: 72px;
+    font-weight: 800;
+    color: #fef395;
+}
+.yt-headline-container{
+    margin-top: 10%;
+}
+.yt-trailing-subline{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    width: 50%;
+}
+.yt-landing-cta-container{
+    width: 100%;
+   
+    padding-top: 15px;
+}
+.yt-landing-cta-container button{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid;
+    color: white;
+    background-color: #ddd057;
+    font-size: 15px;
+    font-weight: 700;
+}
+@media (max-width: 800px){
+    .yt-headline-container{
+        margin-top: 15%;
+    }
+    .yt-headline{
+        text-align: center;
+        font-size: 48px;
+    }
+    .yt-trailing-subline{
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .yt-landing-cta-container{
+        width: 100%;
+        padding-top: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .yt-landing-cta-container button{
+        float: none;
+        margin: 0px auto;
+        display: block;
+    }
+}
+@media (max-width: 450px){
+    .yt-headline-container{
+        margin-top: 20%;
+    }
+    .yt-headline{
+        font-size: 36px;
+        width: 100%;
+    }
+    .yt-trailing-subline{
+        font-size: 18px;
+        font-weight: 400;
+        width: 100%;
+    }
+}

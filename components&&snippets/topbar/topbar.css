@@ -1,0 +1,138 @@
+/*topbar component style*/
+.yt-topbar{
+    width: 100%;
+    box-shadow: -1px 1px 8px #fef395;
+    background-color: #ffffff;
+    opacity: 0.8;
+    position: fixed;
+}
+.yt-ham-line{
+    height: 2px;
+    background: #cd6a00;
+    width: 20px;
+}
+.yt-ham-line.top, .yt-ham-line.bottom{
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.yt-ham-line.bottom{
+    bottom: 2px;
+}
+.yt-ham-line.top{
+    top: 2px;
+}
+.yt-tight{
+    width: max-content;
+    display: flex;
+    color: #cd6a00;
+}
+.yt-hamburger-container{
+    width: max-content;
+    margin-top: 16px;
+    float: right;
+    margin-right: 18px;
+}
+.yt-menu-text{
+    line-height: 0.7;
+    padding-right: 4px;
+}
+.yt-nav-container{
+    display: none;
+}
+.yt-logo-img{
+    width: 150px;
+}
+.yt-page-nav li{
+    display: inline-block;
+    margin-top: 18px;
+    margin-left: 40px;
+}
+.yt-page-nav li a{
+    color: #7a7332;
+}
+.yt-ham-active .yt-ham-line{
+    display: none;
+}
+.yt-ham-active .yt-ham-line.top{
+    display: block;
+    animation-name: rotateMin;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-delay: 0ms;
+    animation-fill-mode: both;
+}
+.yt-ham-active .yt-ham-line.bottom{
+    display: block;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-delay: 0ms;
+    animation-fill-mode: both;
+    animation-name: rotateNor;
+}
+.yt-nav-active{
+    font-weight: 600;
+    border-bottom: 3px solid;
+    margin: 0px auto;
+    color: white;
+}
+
+@keyframes rotateNor {
+    0%{
+
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+@keyframes rotateMin {
+    0%{
+
+    }
+    100%{
+        transform : rotate(-45deg)
+    }
+}
+@media (max-width: 992px){
+    .yt-mobile{
+        display: block;
+        position: absolute;
+        width: 100%;
+        right: 0%;
+        top: 110%;
+        text-align: center;
+        font-size: 24px;
+        background-color: #27240e;
+    }
+    .yt-mobile li{
+        list-style-type: none;
+        display : block;
+        margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .yt-mobile ul{
+        padding:0px;
+    }
+    .yt-page-nav li a{
+        color: #ddd057;
+    }
+}
+@media (min-width: 992px){
+    .yt-nav-container{
+        display: block;
+        width: max-content;
+        float: right;
+        margin-right: 40px;
+    }
+    .yt-hamburger-container{
+        display: none;
+    }
+    .yt-logo-img{
+        margin-top: 9px;
+    }
+    .yt-nav-active{
+        border-bottom: 3px solid;
+    }
+}
