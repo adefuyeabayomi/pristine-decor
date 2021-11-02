@@ -1,0 +1,14 @@
+{
+  "name": "pristine-interior-decor-website",
+  "version": "1.0.0",
+  "description": "Website for pristine interior decoration company. ",
+  "main": "main.js",
+  "author": "Adefuye Abayomi",
+  "license": "MIT",  
+  "dependencies": {
+    "uikit": "^3.7.6"
+  },
+  "devDependencies": {
+    "webpack": "^5.58.1"
+  }
+}
