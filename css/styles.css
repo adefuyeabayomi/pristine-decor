@@ -829,3 +829,21 @@ main{
     padding-top: 5px;
     text-align: center;
   }
+  #loader-area{
+    height : 100vh;
+    background : black;
+  }
+  .loader-container{
+    padding-top: 30vh;
+  }
+  .loader-header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color : white;
+  }
+  .my-spinner{
+    width: max-content;
+    margin: 0px auto;
+    color : white;
+  }
